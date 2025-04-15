@@ -7,22 +7,14 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="true">
-        <name>android.hardware.media.c2</name>
-        <version>1.0</version>
-        <interface>
-            <name>IComponentStore</name>
-            <instance>default1</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
+    <hal format="hidl">
         <name>android.hardware.media.c2</name>
         <version>1.0</version>
         <interface>
             <name>IComponentStore</name>
             <instance>default</instance>
-            <instance>dolby</instance>
+            <instance>default1</instance>
             <instance>software</instance>
         </interface>
-    </hal>
+   </hal>
 </compatibility-matrix>
