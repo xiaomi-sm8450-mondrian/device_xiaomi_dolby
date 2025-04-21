@@ -1,7 +1,7 @@
 type hal_dms_default, domain;
 hal_server_domain(hal_dms_default, hal_dms)
 
-type hal_dms_default_exec, exec_type, vendor_file_type, file_type;
+type hal_dms_default_exec, exec_type, file_type, vendor_file_type;
 allow hal_dms_default hal_dms_default_exec:file { read getattr map execute open entrypoint };
 
 init_daemon_domain(hal_dms_default)

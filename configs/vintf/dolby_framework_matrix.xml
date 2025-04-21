@@ -7,14 +7,15 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl">
+    <hal format="hidl" optional="true">
         <name>android.hardware.media.c2</name>
         <version>1.0</version>
         <interface>
             <name>IComponentStore</name>
+            <instance>software</instance>
             <instance>default</instance>
             <instance>default1</instance>
-            <instance>software</instance>
+            <instance>default2</instance>
         </interface>
    </hal>
 </compatibility-matrix>

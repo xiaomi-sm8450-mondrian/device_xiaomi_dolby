@@ -1,3 +1,4 @@
+# Dolby
 ro.audio.spatializer_enabled=true
 ro.vendor.dolby.dax.version=DAX3_3.7.0.8_r1
 ro.vendor.audio.dolby.dax.support=true
