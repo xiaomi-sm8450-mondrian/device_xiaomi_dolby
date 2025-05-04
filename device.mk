@@ -7,7 +7,12 @@
 # Inherit from the proprietary version
 $(call inherit-product, vendor/xiaomi/dolby/dolby-vendor.mk)
 
+AUDIO_HAL_DIR := hardware/qcom-caf/sm8450/audio/primary-hal
+
 # Audio Config
+PRODUCT_COPY_FILES += \
+    $(AUDIO_HAL_DIR)/configs/taro/audio_effects.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_diwali/audio_effects.conf
+
 PRODUCT_PACKAGES += \
     XiaomiDolby
 
@@ -22,7 +27,7 @@ PRODUCT_PACKAGES += \
 
 # Media Dolby VNDK
 PRODUCT_PACKAGES += \
-    libstagefright_foundation-v33:64
+    libstagefright_foundation-v33
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/media_codecs_dolby_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_dolby_audio.xml
